@@ -1,14 +1,47 @@
 .header {
   width: 100%;
-  height: 50px;
-  background: #6f7db4;
+  /* min-height: 50px; */
+  /* background: var(--color-light-nav-body); */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border-bottom: 2px solid #2c49a0; */
 }
 
-.box {
+.div {
   width: 100%;
-  padding: 0;
+  height: 100%;
+  padding: 15px 20px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.themeBtn {
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.link {
+  border-radius: 4px;
+  /* Добавляет закругленные углы */
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.7s ease;
+  padding: 15px 20px;
+}
+
+.active {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  background: #2c49a0;
+  color: #ffdd33;
+}
+
+.list li:last-child {
+  padding-right: 10px;
+  margin-left: auto;
 }

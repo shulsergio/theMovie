@@ -2,12 +2,19 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-}
+  --color-light-main-body: #ffffff;
+  --color-light-second-body: #e1e1e1;
+  --color-light-nav-body: #0047aa;
+  --color-light-nav-text: #fff;
+  --color-light-nav-text-hover: #eeff00;
+  --color-light-main-text: #000;
+  --color-light-second-text: #494949;
 
-body {
-  margin: 0;
-  display: flex;
-  /* place-items: center; */
-  min-width: 320px;
-  min-height: 100vh;
+  --color-dark-main-body: #252525;
+  --color-dark-second-body: #595959;
+  --color-dark-nav-body: #0e3976;
+  --color-dark-nav-text: #e1e1e1;
+  --color-dark-nav-text-hover: #eeff00;
+  --color-dark-main-text: #e1e1e1;
+  --color-dark-second-text: #494949;
 }

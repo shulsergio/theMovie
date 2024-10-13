@@ -16,29 +16,29 @@ const ShowPage = lazy(() => import("../src/Pages/ShowPage"));
 const NotFoundPage = lazy(() => import("../src/Pages/NotFoundPage"));
 
 const App = () => {
-  const [theme, setTheme] = useState<string>("light");
+  const [theme, setTheme] = useState(lightTheme);
   const switchTheme = (): void => {
-    if (theme === "light") {
-      setTheme("dark");
+    if (theme === lightTheme) {
+      setTheme(darkTheme);
     } else {
-      setTheme("light");
+      setTheme(lightTheme);
     }
   };
 
   return (
     <>
-      <Navigation switchTheme={switchTheme} />
-      <Suspense fallback={<Loader />}>
-        <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-          <GlobalStyles />
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Navigation switchTheme={switchTheme} />
+        <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/movies" element={<MoviePage />} />
             <Route path="/show" element={<ShowPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
-        </ThemeProvider>
-      </Suspense>
+        </Suspense>
+      </ThemeProvider>
     </>
   );
 };
