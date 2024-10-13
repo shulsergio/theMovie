@@ -1,10 +1,15 @@
 import css from "./Navigation.module.css";
 import Container from "../Container/Container";
 import { NavLink } from "react-router-dom";
+import { MdOutlineDarkMode } from "react-icons/md";
 // import { MdOutlineDarkMode } from "react-icons/md";
 // import { ThemeProvider } from "styled-components";
 
-const Navigation = () => {
+interface NavigationProps {
+  switchTheme: () => void;
+}
+
+const Navigation: React.FC<NavigationProps> = ({ switchTheme }) => {
   return (
     <>
       <Container>
@@ -21,11 +26,10 @@ const Navigation = () => {
                 <li>
                   <NavLink to="/show">TV Show</NavLink>
                 </li>
-                {/* <button onClick={switchTheme}>
-                  <MdOutlineDarkMode size={24} />
-                </button> */}
                 <li>
-                  <button></button>
+                  <button onClick={switchTheme}>
+                    <MdOutlineDarkMode size={24} />
+                  </button>
                 </li>
               </ul>
             </nav>
