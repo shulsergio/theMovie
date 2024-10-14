@@ -25,7 +25,8 @@ const HomePage = () => {
         const { results } = await fetchMovies(
           "https://api.themoviedb.org/3/trending/movie/week"
         );
-        console.log("+ response.results:", results);
+        console.log(" не пишу если response а только results:", results);
+        console.log("+ results.length:", results.length);
         if (!results.length) {
           return setEmpty(true);
         }
@@ -41,7 +42,7 @@ const HomePage = () => {
 
   return (
     <>
-      <h1>Movie Data Base</h1>
+      <h1>Rated films</h1>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
       {empty && <p>No movies found.</p>}
