@@ -3,20 +3,21 @@
   height: 250px;
   border: 1px solid #e3fdff;
   border-radius: 4px;
-  box-shadow: 4px 4px 8px rgba(32, 33, 36, 0.35);
   transition: box-shadow 0.4s ease;
 }
 .movieImg {
   width: 150px;
-  height: 200px;
+  height: 190px;
   object-fit: cover;
 }
-.card:hover {
-  box-shadow: 8px 8px 16px rgba(32, 33, 36, 0.7);
-}
+/* .card:hover {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.7);
+} */
+
 .title {
+  padding-bottom: 4px;
   text-align: center;
   font-size: 16px;
-  font-weight: normal;
-  color: rgb(0, 0, 197);
+  font-weight: bold;
+  /* color: #0000c5; */
 }

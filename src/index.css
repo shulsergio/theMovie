@@ -4,11 +4,14 @@
   font-weight: 400;
   --color-light-main-body: #ffffff;
   --color-light-second-body: #e1e1e1;
-  --color-light-nav-body: #0047aa;
+  --color-light-nav-body: #0000c5;
   --color-light-nav-text: #fff;
   --color-light-nav-text-hover: #eeff00;
   --color-light-main-text: #000;
-  --color-light-second-text: #494949;
+  --color-light-second-text: #0000c5;
+
+  --color-light-card-shadow-normal: rgba(0, 0, 0, 0.349);
+  --color-light-card-shadow-hover: rgba(0, 0, 0, 0.7);
 
   --color-dark-main-body: #252525;
   --color-dark-second-body: #595959;
@@ -16,5 +19,7 @@
   --color-dark-nav-text: #e1e1e1;
   --color-dark-nav-text-hover: #eeff00;
   --color-dark-main-text: #e1e1e1;
-  --color-dark-second-text: #494949;
+  --color-dark-second-text: #b1b1ff;
+  --color-dark-card-shadow-normal: rgba(255, 255, 255, 0.349);
+  --color-dark-card-shadow-hover: rgba(255, 255, 255, 0.7);
 }
