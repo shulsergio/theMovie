@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   min-width: 320px;
   max-width: 1280px;
 }
@@ -28,10 +28,11 @@ a,
 button {
   text-decoration: none;
 }
-h1 {
-  padding-top: 15px;
+h1,
+h2 {
+  padding: 15px 0 15px 15px;
   font-size: 28px;
   font-weight: bold;
-  text-align: center;
-  padding-bottom: 12px;
+  /* text-align: center;
+  padding-bottom: 12px; */
 }

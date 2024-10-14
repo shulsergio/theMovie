@@ -32,7 +32,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ id, title, poster }) => {
           src={poster ? `https://image.tmdb.org/t/p/w500${poster}` : defaultImg}
           alt={title}
         />
-        <P className={css.title}>{title}</P>
+        <P className={css.title}>{title.slice(0, 28)}</P>
       </Link>
     </Div>
   );
